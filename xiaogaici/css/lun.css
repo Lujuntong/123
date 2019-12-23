@@ -1,0 +1,68 @@
+#banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+ .bannerCon {
+    width: 550px;
+    height: 300px;
+    background: blue;
+    margin: 0px auto;
+    position: relative;
+}
+
+ .bannerCon .before {
+    width: 550px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: -550px;
+    bottom: 0px;
+    z-index: 333;
+}
+
+ .bannerCon .before img {
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    cursor: pointer;
+}
+
+ .bannerCon .after {
+    width: 550px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    right: -550px;
+    bottom: 0px;
+    z-index: 333;
+}
+
+ .bannerCon .after img {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    cursor: pointer;
+}
+
+ .bannerCon .scroll {
+    width: 2000%;
+    height: 300px;
+    position: relative;
+    left: -550px;
+}
+
+ .bannerCon .scroll img {
+    width: 550px;
+    height: 300px;
+    float: left;
+}
+
+ .bannerBut {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 275px;
+    bottom: 0px;
+}
+

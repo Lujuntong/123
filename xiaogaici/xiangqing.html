@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小盖茨-详情</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/xiangqing.css">
+    <script src="./js/flexible.js"></script>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="tab">
+        <div class="tab_con">
+            <div class="item" style="display: block;">
+                <header>
+                    <div class="search"><b>详情</b></div>
+                </header>
+
+<br>
+<br>
+<br>
+               123
+                
+            </div>
+
+            <div class="tab_list">
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./jiaoxue.html">教学</a></li>
+                    <li><a href="./jiameng.html">加盟</a></li>
+                    <li><a href="./guanyu.html">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $('.tab_list li').click(function () {
+                $(this).addClass('current').siblings().removeClass('current');
+                var index = $(this).index();
+                $('.item').eq(index).show().siblings().hide();
+            })
+        </script>
+</body>
+
+</html>

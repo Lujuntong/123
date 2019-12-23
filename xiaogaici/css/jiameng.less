@@ -1,0 +1,571 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+}
+
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    html {
+        font-size: 32px !important;
+    }
+}
+
+
+@base_fontsize: 75;
+
+
+body {
+    width                 : 750rem/@base_fontsize;
+    min-width             : 320px;
+    margin                : 0 auto;
+    font-size             : 24rem/@base_fontsize;
+    background-color      : rgb(245, 245, 245);
+    // background         : #fff;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+header {
+    height          : 68rem/@base_fontsize;
+    display         : flex;
+    background-color: rgb(255, 255, 255);
+    position        : fixed;
+    width           : 750rem/@base_fontsize;
+    min-width       : 320px;
+    z-index         : 999;
+
+    border-bottom: 2rem/@base_fontsize solid rgb(157, 157, 157);
+
+    .search {
+        flex            : 1;
+        background-color: #fff;
+        line-height     : 68rem/@base_fontsize;
+        padding-left    : 35rem/@base_fontsize;
+        font-size       : 28rem/@base_fontsize;
+
+    }
+}
+
+.tttt {
+    padding-top: 30rem/@base_fontsize;
+}
+
+.title {
+    text-align : center;
+    height     : 100%;
+    line-height: 60rem/@base_fontsize;
+    ;
+
+    h2 {
+        font-size  : 24rem/@base_fontsize;
+        font-weight: bold;
+        color      : #0285b4;
+    }
+
+    .line {
+        margin    : 0 auto;
+        width     : 60rem/@base_fontsize;
+        height    : 2rem/@base_fontsize;
+        background: #f97c29;
+    }
+
+    p {
+        color    : rgb(102, 102, 102);
+        font-size: 24rem/@base_fontsize;
+        display  : block;
+    }
+}
+
+// banner图
+.banner {
+    width         : 750rem/@base_fontsize;
+    height        : 234rem/@base_fontsize;
+    // padding-top: 68rem/@base_fontsize;
+
+    img {
+        overflow  : hidden;
+        width     : 100%;
+        margin-top: 68rem/@base_fontsize;
+    }
+}
+
+// banner上文本
+.tuwen {
+    width   : 750rem/@base_fontsize;
+    height  : 183rem/@base_fontsize;
+    position: relative;
+
+    dl {
+        width           : 680rem/@base_fontsize;
+        height          : 203rem/@base_fontsize;
+        border          : 1px #ccc solid;
+        background-color: #fff;
+        border-radius   : 15rem/@base_fontsize;
+        // margin       : 0 auto;
+        position        : absolute;
+
+        top       : -50rem/@base_fontsize;
+        left      : 33rem/@base_fontsize;
+        // z-index: 999;
+
+        dt {
+            width        : 680rem/@base_fontsize;
+            margin       : 15rem/@base_fontsize 20rem/@base_fontsize;
+            font-size    : 24rem/@base_fontsize;
+            color        : rgb(127, 127, 127);
+            margin-bottom: 30rem/@base_fontsize;
+        }
+
+        dd {
+            width    : 620rem/@base_fontsize;
+            margin   : 3rem/@base_fontsize 20rem/@base_fontsize;
+            font-size: 18rem/@base_fontsize;
+            color    : rgb(170, 170, 170);
+        }
+    }
+}
+
+.xgczb {
+    width: 750rem/@base_fontsize;
+
+    .wenzikuai {
+
+        // height       : 183rem/@base_fontsize;
+        // margin-bottom: 30rem/@base_fontsize;
+        dl {
+            width           : 700rem/@base_fontsize;
+            margin          : 0 auto;
+            height          : 193rem/@base_fontsize;
+            border          : 1px #ccc solid;
+            background-color: #fff;
+            border-radius   : 15rem/@base_fontsize;
+            margin-bottom   : 20rem/@base_fontsize;
+
+            dt {
+                width       : 680rem/@base_fontsize;
+                margin      : 25rem/@base_fontsize 45rem/@base_fontsize;
+                font-size   : 26rem/@base_fontsize;
+                // color    : rgb(127, 127, 127);
+            }
+
+            dd {
+                width    : 680rem/@base_fontsize;
+                margin   : 20rem/@base_fontsize 45rem/@base_fontsize;
+                font-size: 22rem/@base_fontsize;
+                color    : rgb(127, 127, 127);
+            }
+        }
+    }
+}
+
+
+.banner2 {
+    width: 750rem/@base_fontsize;
+
+    img {
+        width: 750rem/@base_fontsize;
+
+    }
+}
+
+
+
+
+
+li {
+    list-style-type: none;
+}
+
+.tab {
+    width: 750rem/@base_fontsize;
+
+    .tab_con {
+        margin-bottom: 90rem/@base_fontsize;
+    }
+}
+
+.tab_list {
+    position        : fixed;
+    z-index         : 999;
+    background-color: #ffffff;
+    width           : 750rem/@base_fontsize;
+    height          : 90rem/@base_fontsize;
+    border-top      : 1rem/@base_fontsize solid #ccc;
+    bottom          : 0rem/@base_fontsize;
+}
+
+.tab_list li {
+    float      : left;
+    height     : 90rem/@base_fontsize;
+    line-height: 90rem/@base_fontsize;
+    width      : 25%;
+    font-size  : 20rem/@base_fontsize;
+    text-align : center;
+    color      : rgb(131, 128, 128);
+    cursor     : pointer;
+}
+
+.item_info {
+    padding: 20rem/@base_fontsize 0 0 20rem/@base_fontsize;
+}
+
+.item {
+    display: none;
+}
+
+
+// 师资体系
+.jianjie {
+    width: 750rem/@base_fontsize;
+
+    .t_lr {
+        border: 1px #ccc solid;
+        width : 650rem/@base_fontsize;
+        margin: 30rem/@base_fontsize auto;
+
+        .t_l {
+            float: left;
+
+            img {
+                width : 346rem/@base_fontsize;
+                height: 202rem/@base_fontsize;
+            }
+
+            // border-right: 1px solid #ccc;
+        }
+
+        .t_r {
+            overflow: hidden;
+
+            .dd1 {
+                padding-top: 50rem/@base_fontsize;
+            }
+
+            dl {
+                height          : 202rem/@base_fontsize;
+                background-color: #fff;
+                // padding-top  : 10px;
+
+
+                dd {
+                    // margin  : auto;
+                    font-size  : 18rem/@base_fontsize;
+                    padding    : 5rem/@base_fontsize 3rem/@base_fontsize;
+                    padding-top: 20rem/@base_fontsize;
+                    text-align : center;
+                    color      : rgb(127, 127, 127);
+                }
+            }
+        }
+    }
+}
+
+// 运营体系
+.youxiu {
+    width: 750rem/@base_fontsize;
+
+    .zzz {
+        width : 90%;
+        margin: 0 auto;
+
+        img {
+            // width: 320rem/@base_fontsize;
+            width   : 50%;
+            height  : 220rem/@base_fontsize;
+            float   : left;
+        }
+
+        dl {
+            // width        : 50%;
+            display         : block;
+            height          : 220rem/@base_fontsize;
+            background-color: #fff;
+
+            dt {
+                width       : 240rem/@base_fontsize;
+                padding-top : 50rem/@base_fontsize;
+                padding-left: 50%;
+                font-size   : 28rem/@base_fontsize;
+                margin      : 0 auto;
+                line-height : 35rem/@base_fontsize;
+                color       : #0285b4;
+            }
+
+            dd {
+                width       : 240rem/@base_fontsize;
+                padding-top : 15rem/@base_fontsize;
+                padding-left: 50%;
+                font-size   : 22rem/@base_fontsize;
+                margin      : 0 auto;
+                line-height : 35rem/@base_fontsize;
+                color       : #0285b4;
+            }
+        }
+    }
+
+
+    .zzzz {
+        width : 90%;
+        margin: 0 auto;
+
+        img {
+            // width    : 320rem/@base_fontsize;
+            width       : 50%;
+            margin-right: 0;
+            height      : 220rem/@base_fontsize;
+            // float    : left;
+        }
+
+        dl {
+            width           : 50%;
+            float           : left;
+            display         : block;
+            height          : 220rem/@base_fontsize;
+            background-color: #fff;
+
+            dt {
+                width       : 240rem/@base_fontsize;
+                padding-top : 50rem/@base_fontsize;
+                padding-left: 18%;
+                font-size   : 28rem/@base_fontsize;
+                line-height : 35rem/@base_fontsize;
+                color       : #0285b4;
+            }
+
+            dd {
+                width       : 240rem/@base_fontsize;
+                padding-top : 15rem/@base_fontsize;
+                padding-left: 18%;
+                font-size   : 22rem/@base_fontsize;
+                line-height : 35rem/@base_fontsize;
+                color       : #0285b4;
+            }
+        }
+    }
+}
+
+.wzpb {
+    width: 750rem/@base_fontsize;
+
+    .kuai_1 {
+        width : 700rem/@base_fontsize;
+        height: 300rem/@base_fontsize;
+        margin: 20rem/@base_fontsize auto;
+
+        // background-color: pink;
+        ul {
+
+            // margin-bottom: 30rem/@base_fontsize;
+            li {
+                width           : 306rem/@base_fontsize;
+                margin          : auto 20rem/@base_fontsize;
+                background-color: #fff;
+                border          : 1rem/@base_fontsize solid #ccc;
+                // overflow     : hidden;
+                float           : left;
+
+                img {
+                    width: 306rem/@base_fontsize;
+                }
+
+                p {
+                    text-align : center;
+                    font-size  : 18rem/@base_fontsize;
+                    line-height: 60rem/@base_fontsize;
+                }
+            }
+        }
+    }
+}
+
+
+.banner11 {
+    width: 750rem/@base_fontsize;
+
+    img {
+        max-width: 100%;
+    }
+
+    i.material-icons {
+        font-size    : 30%;
+        margin-bottom: 120rem/@base_fontsize;
+    }
+
+    .container {
+        width : 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+.jmlc{
+    width: 750rem/@base_fontsize;
+    height: 270rem/@base_fontsize;
+    background-color: #fff;
+    img{
+        width: 750rem/@base_fontsize;
+        padding-top: 100rem/@base_fontsize;
+
+    }
+}
+
+
+
+.shitk {
+    margin-top      : 1rem/@base_fontsize;
+    width           : 750rem/@base_fontsize;
+    height          : 380rem/@base_fontsize;
+    background-color: #fff;
+
+    span {
+        font-size: 18rem/@base_fontsize;
+    }
+
+    .top_st {
+        h3 {
+            font-size  : 46rem/@base_fontsize;
+            text-align : center;
+            line-height: 110rem/@base_fontsize;
+            height     : 110rem/@base_fontsize;
+            color      : #0285b4;
+        }
+    }
+
+    .center_st {
+        // margin-top: 10rem/@base_fontsize;
+
+        .shiting_box1 {
+            text-align : center;
+            height     : 100rem/@base_fontsize;
+            color      : rgb(102, 102, 102);
+            line-height: 70rem/@base_fontsize;
+
+            input {
+                height   : 40rem/@base_fontsize;
+                width    : 350rem/@base_fontsize;
+                font-size: 16rem/@base_fontsize;
+            }
+
+        }
+
+        .shiting_box2 {
+            text-align: center;
+            margin-top: 60rem/@base_fontsize;
+
+            input {
+                width           : 130rem/@base_fontsize;
+                height          : 45rem/@base_fontsize;
+                border-radius   : 30rem/@base_fontsize;
+                border          : none;
+                font-size       : 16rem/@base_fontsize;
+                background-color: rgb(0, 121, 254);
+                color           : #fff;
+            }
+
+        }
+    }
+}
+
+#share {
+    position: fixed;
+    bottom  : 100px;
+    right   : 0;
+    width   : 50px;
+    zoom    : 1;
+    z-index : 999;
+
+}
+
+#share a {
+    background-image: url(../imgs/backtop_01.png);
+
+    background-repeat : no-repeat;
+    display           : block;
+    width             : 50px;
+    height            : 50px;
+    margin-bottom     : 2px;
+    overflow          : hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition   : all 0.2s ease-in-out;
+    -o-transition     : all 0.2s ease-in-out;
+    -ms-transition    : all 0.2s ease-in-out;
+    transition        : all 0.2s ease-in-out;
+    background-color  : rgba(216, 224, 229, 1);
+    text-align        : center;
+}
+
+#share .sina {
+    background-position: 8px 5px;
+    position           : absolute;
+    bottom             : 70px;
+
+}
+
+#share a.sina:hover {
+    background-color: #0285b4;
+}
+
+#share .tencent {
+    background-position: 13px -148px;
+    position           : absolute;
+    bottom             : 0;
+}
+
+#share a.tencent:hover {
+    background-color: #0285b4;
+}
+
+#share a#totop {
+    background-position: 7px -58px;
+    position           : absolute;
+    bottom             : 140px;
+    cursor             : pointer;
+}
+
+#share a#totop:hover {
+    background-color: #0285b4;
+}
+
+.erweima {
+    width     : 120px;
+    height    : 120px;
+    position  : absolute;
+    top       : -85px;
+    right     : 80px;
+    background: #0285b4;
+    display   : none;
+}
+
+.erweima img {
+    width  : 100px;
+    display: block;
+    margin : 5px auto 0;
+}
+
+.erweima::after {
+    content     : "";
+    position    : absolute;
+    top         : 40px;
+    right       : -20px;
+    border-width: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent transparent transparent #0285b4;
+}
